@@ -1,0 +1,10 @@
+Package: zta-client
+Version: 0.1.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Installed-Size: 218600
+Maintainer: ZtA LLC.
+Provides: qrsecure
+Description: zta linux client.
+

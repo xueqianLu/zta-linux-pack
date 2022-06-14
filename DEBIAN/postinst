@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+systemctl start zta.service
+systemctl enable zta.service
+exit 0
+
+#if [ -d "$HOME/Desktop" ]; then
+#	cp /usr/share/applications/zta.desktop $HOME/Desktop/
+#fi
+#
+#if [ -d "$HOME/桌面" ]; then
+#	cp /usr/share/applications/zta.desktop $HOME/桌面/
+#fi

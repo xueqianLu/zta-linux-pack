@@ -1,0 +1,10 @@
+#!/bin/sh
+
+systemctl stop zta.service
+systemctl disable zta.service 
+
+killall -9 ztaclient
+killall -9 ztaclient.AppImage
+sleep 2
+
+exit 0

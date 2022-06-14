@@ -1,0 +1,14 @@
+[Unit]
+Description=zta-backend
+Requires=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/zta/zta_login_server  
+ExecStop=kill -9 $(pidof zta_login_server)
+ExecReload=kill -9 $(pidof zta_login_server) && /opt/zta/zta_login_server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
